@@ -1,0 +1,8 @@
+<h1 mat-dialog-title>Remove Customer</h1>
+<div mat-dialog-content>
+	Do you want to delete the customer "{{dataCustomer.contact_name}}" ?
+</div>
+<div mat-dialog-actions>
+  <button mat-raised-button mat-dialog-close color="warn">back</button>
+  <button mat-raised-button  color="primary" (click)="confirmarEliminar()" cdkFocusInitial>Yes, delete</button>
+</div>

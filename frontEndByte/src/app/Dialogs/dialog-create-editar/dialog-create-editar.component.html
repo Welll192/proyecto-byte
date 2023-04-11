@@ -1,0 +1,91 @@
+<h1 mat-dialog-title>{{tituloForm}} Customer</h1>
+<div mat-dialog-content>
+	<form [formGroup]="formCustomer">
+		<mat-grid-list cols="1" rowHeight="100px">
+			<mat-grid-tile>
+
+				<mat-form-field appearance="outline">
+					<mat-label>Company Name</mat-label>
+					<input matInput formControlName="company_name" autocomplete="off" >
+				  </mat-form-field>
+
+			</mat-grid-tile>
+			<mat-grid-tile>
+				
+				<mat-form-field appearance="outline">
+					<mat-label>Contact Name</mat-label>
+					<input matInput formControlName="contact_name" autocomplete="off" >
+				  </mat-form-field>
+			</mat-grid-tile>
+			<mat-grid-tile>
+				
+				<mat-form-field appearance="outline">
+					<mat-label>Contact Title</mat-label>
+					<input matInput formControlName="contact_title" autocomplete="off" >
+				  </mat-form-field>
+
+			</mat-grid-tile>
+			<mat-grid-tile>
+				
+				<mat-form-field appearance="outline">
+					<mat-label>Phone</mat-label>
+					<input matInput formControlName="phone" autocomplete="off" >
+				  </mat-form-field>
+
+			</mat-grid-tile>
+			<mat-grid-tile>
+				
+				<mat-form-field appearance="outline">
+					<mat-label>Fax</mat-label>
+					<input matInput formControlName="fax" autocomplete="off" >
+				  </mat-form-field>
+
+			</mat-grid-tile>
+			<mat-grid-tile>
+				
+				<mat-form-field appearance="outline">
+					<mat-label>Address</mat-label>
+					<input matInput formControlName="address" autocomplete="off" >
+				  </mat-form-field>
+
+			</mat-grid-tile>		
+				<mat-grid-tile>
+				
+				<mat-form-field appearance="outline">
+					<mat-label>City</mat-label>
+					<input matInput formControlName="city" autocomplete="off" >
+				  </mat-form-field>
+
+			</mat-grid-tile>		
+				<mat-grid-tile>
+				
+
+				<mat-form-field appearance="outline">
+					<mat-label>Region</mat-label>
+					<input matInput formControlName="region" autocomplete="off" >
+				  </mat-form-field>
+
+			</mat-grid-tile>		
+			<mat-grid-tile>
+				
+				<mat-form-field appearance="outline">
+					<mat-label>Postal Code</mat-label>
+					<input matInput formControlName="postal_code" autocomplete="off" >
+				  </mat-form-field>
+
+			</mat-grid-tile>			
+			<mat-grid-tile>
+				
+				<mat-form-field appearance="outline">
+					<mat-label>Country</mat-label>
+					<input matInput formControlName="country" autocomplete="off" >
+				  </mat-form-field>
+
+			</mat-grid-tile>
+		  </mat-grid-list>		  
+	</form>
+</div>
+<div mat-dialog-actions>
+  <button mat-raised-button mat-dialog-close color="warn">Back</button>
+  <button mat-raised-button  color="primary" (click)="createEditarCustomer()" [disabled]="formCustomer.invalid">{{botonAccion}}</button>
+</div>
